@@ -14,16 +14,10 @@
     <main>
         <section class="box1">
             <div class="box1-content">
-                <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./img/twitter.png" alt="" width="30px" height="30px"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./img/hash.svg" alt="" width="22px" height="22px">Explorar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./img/config.png" alt="" width="22px"
-                            height="22px"><span>Configurações</span></a>
-                </li>
+                <a href="" class="nav-link1"><img src="./img/twitter.png" alt="" width="30px" height="30px"></a>
+                <a href="" class="nav-link"><img src="./img/hash.svg" alt="" width="22px" height="22px">Explorar</a>
+                <a href="" class="nav-link"><img src="./img/config.png" alt="" width="22px"
+                        height="22px">Configurações</a>
 
 
             </div>
@@ -33,6 +27,8 @@
                 <nav>
                     <p class="titulo-box2">Explorar</p>
                     <img src="./img/config.png" alt="" width="22px" height="22px">
+
+
                 </nav>
             </div>
 
@@ -41,7 +37,34 @@
                     <header>
                         <img src="./img/config.png" alt="">
                         <h4>Buttermilk pancakes</h4>
-                        <h4 class="price">R$ 15</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus, architecto incidunt
+                        perferendis,
+                        sit assumenda vitae fuga unde
+                    </p>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <div class="item-info">
+                    <header>
+                        <img src="./img/config.png" alt="">
+                        <h4>Buttermilk pancakes</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus, architecto incidunt
+                        perferendis,
+                        sit assumenda vitae fuga unde
+                    </p>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <div class="item-info">
+                    <header>
+                        <img src="./img/config.png" alt="">
+                        <h4>Buttermilk pancakes</h4>
                     </header>
                     <p class="item-text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus, architecto incidunt
@@ -61,10 +84,11 @@
                     <article>
                         <button class="google"><a
                                 href="https://accounts.google.com/v3/signin/identifier?dsh=S487138880%3A1683143268583311&hl=pt&ifkv=Af_xneFFUYQIsiS5KGc-mYP2WPvBpGu7fII4AFA1z1EHBBplXmQvr1l4LuHMOuiJP9EpAE8PwM5BQQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
-                                src="./img/icons8-google-logo-100.png" alt="" width="18px" height="18px">
-                           Inscrever-se no Google</a></button>
-                        <button class="apple"><a href="https://appleid.apple.com/sign-in"><img src="./img/icons8-mac-os-50.png" alt="" width="18px" height="18px">
-                            Inscrever-se com Apple</a></button>
+                                    src="./img/icons8-google-logo-100.png" alt="" width="20px" height="20px">
+                                Inscrever-se no Google</a></button>
+                        <button class="apple"><a href="https://appleid.apple.com/sign-in"><img
+                                    src="./img/icons8-mac-os-50.png" alt="" width="20px" height="20px">
+                                Inscrever-se com Apple</a></button>
                         <button class="google">Criar conta</button>
                     </article>
                     <p class="texto-box">Ao se inscrever, você concorda com os <a href="" class="link">Termos de
@@ -78,15 +102,48 @@
                 <a href="">Política de cookies</a>
                 <a href="">Acessibilidade</a>
                 <a href="">Informações de anúncios</a>
-                Mais 2023 X Corp.</p>
+                Mais 2023 © Corp.
+            </p>
         </section>
-        
+
     </main>
     <footer>
-        <h3>
-            Não perca o que está acontecendo
-        </h3>
+        <div class="texto-footer">
+            <h3>
+                Não perca o que está acontecendo
+            </h3>
             <p>As pessoas que usam o Twitter são as primeiras a saber.</p>
+        </div>
+        <div class="buttons">
+
+            <button id="myBtn" class="entrar">Entrar</button>
+            <div id="meu-modal" class="modal">
+                <div class="modal-conteudo">
+
+                    <section class="header-modal"><span class="modal-fechar">&times; </span>
+                        <img class="logo" src="./img/twitter.png" alt="" width="30px" height="30px">
+                       </section>
+
+
+                    <h2 id="titulo-modal">Entrar no Twitter</h2>
+                    <button class="google-modal"><a
+                            href="https://accounts.google.com/v3/signin/identifier?dsh=S487138880%3A1683143268583311&hl=pt&ifkv=Af_xneFFUYQIsiS5KGc-mYP2WPvBpGu7fII4AFA1z1EHBBplXmQvr1l4LuHMOuiJP9EpAE8PwM5BQQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
+                                src="./img/icons8-google-logo-100.png" alt="" width="20px" height="20px">
+                            Fazer login com o Google</a></button>
+                    <button class="apple-modal"><a href="https://appleid.apple.com/sign-in"><img
+                                src="./img/icons8-mac-os-50.png" alt="" width="20px" height="20px">
+                            Entrar com Apple</a></button>
+                    <div class="linha"> <p>ou</p></div>
+                    
+                    <input type="email" placeholder="Celular, e-mail ou nome de usuário">
+                    <button id="avancar" type="submit">Avançar</button>
+                    <button id="senha">Esqueceu sua senha?</button>
+
+                    <p class="inscricao">Não tem uma conta? <a href="">Inscreva-se</a></p>
+                </div>
+            </div>
+            <button class="inscrever">Inscrever-se</button>
+        </div>
     </footer>
     <script src="./js.js"></script>
 </body>
