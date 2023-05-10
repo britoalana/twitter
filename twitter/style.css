@@ -8,6 +8,7 @@
     display: grid;
     gap: 2rem;
     align-items: center;
+    position: fixed;
 }
 
 .box1 a {
@@ -41,6 +42,7 @@
 
 .nav-link img {
     margin-right: 1rem;
+
 }
 
 main {
@@ -62,8 +64,13 @@ main {
     position: fixed;
     background-color: rgba(191, 193, 195, 0.15);
     height: 53px;
+    cursor: pointer;
 }
 
+.config:hover{
+    background-color: #bab6b6;
+    border-radius: 5rem;
+}
 .box2 {
     display: flex;
     flex-direction: column;
@@ -72,6 +79,7 @@ main {
     width: 50%;
 
 }
+
 
 .content-box {
     font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -85,6 +93,7 @@ main {
     padding: 1rem;
     margin-top: 1rem;
 }
+
 
 .texto-box {
     font-size: 13px;
@@ -107,8 +116,14 @@ main {
     font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: white;
     font-size: 15px;
+    cursor: pointer;
 }
 
+.box3-content{
+    position: fixed;
+    right: 0;
+
+}
 button:hover {
     background-color: rgba(128, 128, 128, 0.363);
     border-radius: 10rem;
@@ -120,6 +135,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 
 .footer {
@@ -163,9 +179,11 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(29, 155, 240);
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     align-items: center;
+    position: fixed;
+  bottom: 0;
 }
 
 .texto-footer {
@@ -173,6 +191,9 @@ footer {
     color: white;
 }
 
+#error {
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
 .inscrever {
     width: 125px;
@@ -182,6 +203,7 @@ footer {
     font-size: 15px;
     border: 1px solid white;
     border-radius: 10rem;
+    cursor: pointer;
 }
 
 .entrar {
@@ -194,6 +216,14 @@ footer {
     border-radius: 10rem;
     background-color: transparent;
     color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: .2rem;
+    justify-content: end;
+    align-items: end;
 }
 
 .modal {
@@ -225,7 +255,7 @@ footer {
 }
 
 .linha {
-    margin-left: 1rem;
+    margin-left: .5rem;
     width: 16rem;
     height: 0px;
     border: 1px solid #C1BAB2;
@@ -234,10 +264,16 @@ footer {
 
 .modal-fechar {
     color: #aaa;
-    float: left;
     font-size: 28px;
     font-weight: bold;
+    margin-left: 1rem;
+}
 
+.header-modal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 17rem;
 }
 
 #avancar {
@@ -265,14 +301,13 @@ footer {
 .modal-fechar:hover,
 .modal-fechar:focus {
     color: #000;
+    background-color: #b5b3b3;
+    border-radius: 20rem;
+    width: 30px;
     text-decoration: none;
     cursor: pointer;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
 
 #titulo-modal {
     font-size: 31px;
@@ -286,7 +321,7 @@ input {
     font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #C1BAB2
 }
 
