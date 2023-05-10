@@ -26,7 +26,7 @@
             <div class="box2-content">
                 <nav>
                     <p class="titulo-box2">Explorar</p>
-                    <img src="./img/config.png" alt="" width="22px" height="22px">
+                    <img class="config" src="./img/config.png" alt="" width="22px" height="22px">
 
 
                 </nav>
@@ -96,7 +96,7 @@
                             class="link">Uso de Cookies</a>.</p>
 
                 </div>
-            </div>
+           
             <p class="footer"><a href="">Termos de Serviço</a>
                 <a href="">Política de privacidade</a>
                 <a href="">Política de cookies</a>
@@ -104,27 +104,29 @@
                 <a href="">Informações de anúncios</a>
                 Mais 2023 © Corp.
             </p>
+        </div>
         </section>
 
     </main>
     <footer>
         <div class="texto-footer">
-            <h3>
+            <h2 >
                 Não perca o que está acontecendo
-            </h3>
+            </h2>
             <p>As pessoas que usam o Twitter são as primeiras a saber.</p>
         </div>
         <div class="buttons">
 
             <button id="myBtn" class="entrar">Entrar</button>
+           <form action="" method="get" id="form">
             <div id="meu-modal" class="modal">
                 <div class="modal-conteudo">
 
-                    <section class="header-modal"><span class="modal-fechar">&times; </span>
+                    <div class="header-modal"><span class="modal-fechar">&times; </span>
                         <img class="logo" src="./img/twitter.png" alt="" width="30px" height="30px">
-                       </section>
+                    </div>
 
-
+                       
                     <h2 id="titulo-modal">Entrar no Twitter</h2>
                     <button class="google-modal"><a
                             href="https://accounts.google.com/v3/signin/identifier?dsh=S487138880%3A1683143268583311&hl=pt&ifkv=Af_xneFFUYQIsiS5KGc-mYP2WPvBpGu7fII4AFA1z1EHBBplXmQvr1l4LuHMOuiJP9EpAE8PwM5BQQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
@@ -135,13 +137,15 @@
                             Entrar com Apple</a></button>
                     <div class="linha"> <p>ou</p></div>
                     
-                    <input type="email" placeholder="Celular, e-mail ou nome de usuário">
+                    <input id="email" type="email" placeholder="Celular, e-mail ou nome de usuário">
+                    <div id="error"></div>
                     <button id="avancar" type="submit">Avançar</button>
                     <button id="senha">Esqueceu sua senha?</button>
 
                     <p class="inscricao">Não tem uma conta? <a href="">Inscreva-se</a></p>
                 </div>
             </div>
+           </form>
             <button class="inscrever">Inscrever-se</button>
         </div>
     </footer>
